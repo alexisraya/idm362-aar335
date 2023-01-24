@@ -40,25 +40,19 @@
                                 <color key="textColor" cyan="0.0" magenta="0.02" yellow="0.12" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCF-F6-300">
-                                <rect key="frame" x="16" y="329" width="123" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cyan="0.0" magenta="0.02" yellow="0.12" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="JJZ-0H-QWW">
-                                <rect key="frame" x="16" y="243" width="129" height="62"/>
+                                <rect key="frame" x="132" y="259" width="129" height="62"/>
                                 <color key="backgroundColor" cyan="0.11" magenta="0.0" yellow="0.47999999999999998" black="0.56000000000000005" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <color key="tintColor" cyan="0.0" magenta="0.040000000000000001" yellow="0.29999999999999999" black="0.13853287459999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="ZcA-rv-4b0"/>
+                                    <constraint firstAttribute="height" constant="62" id="ofQ-PW-adx"/>
                                 </constraints>
                                 <date key="minimumDate" timeIntervalSinceReferenceDate="-1609419600">
                                     <!--1950-01-01 11:00:00 +0000-->
                                 </date>
                             </datePicker>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KH4-1w-mgX">
-                                <rect key="frame" x="16" y="361" width="51" height="31"/>
+                                <rect key="frame" x="172" y="377.33333333333331" width="51" height="31"/>
                                 <color key="onTintColor" cyan="0.0" magenta="0.42999999999999999" yellow="0.80000000000000004" black="0.26000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <color key="thumbTintColor" cyan="0.0" magenta="0.040000000000000001" yellow="0.29999999999999999" black="0.13853287459999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                             </switch>
@@ -73,32 +67,38 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCF-F6-300">
+                                <rect key="frame" x="15.999999999999993" y="329.33333333333331" width="110.33333333333331" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cyan="0.0" magenta="0.02" yellow="0.12" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" cyan="0.26000000000000001" magenta="0.0" yellow="0.56000000000000005" black="0.79000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="JJZ-0H-QWW" firstAttribute="leading" secondItem="9iR-Jw-Au1" secondAttribute="leading" id="3ID-Bm-fNs"/>
-                            <constraint firstItem="JJZ-0H-QWW" firstAttribute="leading" secondItem="kCF-F6-300" secondAttribute="leading" id="FBk-Zd-T1R"/>
                             <constraint firstItem="NCD-ZT-aZv" firstAttribute="top" secondItem="ikW-nz-gUM" secondAttribute="bottom" constant="8" id="FII-sL-b1b"/>
-                            <constraint firstItem="JJZ-0H-QWW" firstAttribute="leading" secondItem="KH4-1w-mgX" secondAttribute="leading" id="Ihb-I4-tfb"/>
-                            <constraint firstItem="kCF-F6-300" firstAttribute="top" secondItem="JJZ-0H-QWW" secondAttribute="bottom" constant="24" id="J29-l3-oWI"/>
+                            <constraint firstItem="KH4-1w-mgX" firstAttribute="top" secondItem="kCF-F6-300" secondAttribute="bottom" constant="24" id="Hlz-wc-ZtU"/>
                             <constraint firstItem="NCD-ZT-aZv" firstAttribute="centerX" secondItem="Hxf-BO-nrF" secondAttribute="centerX" id="JL3-2J-UYe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="9iR-Jw-Au1" secondAttribute="trailing" constant="293" id="KRQ-e2-GTQ"/>
-                            <constraint firstItem="KH4-1w-mgX" firstAttribute="top" secondItem="kCF-F6-300" secondAttribute="bottom" constant="8" id="NSo-1U-cOf"/>
                             <constraint firstItem="ikW-nz-gUM" firstAttribute="top" secondItem="Hxf-BO-nrF" secondAttribute="top" constant="62" id="Nkx-RQ-6g9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="kCF-F6-300" secondAttribute="trailing" constant="254" id="RnY-3k-oqg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JJZ-0H-QWW" secondAttribute="trailing" constant="248" id="Rod-QL-f9W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kCF-F6-300" secondAttribute="trailing" constant="266.66666666666663" id="RnY-3k-oqg"/>
                             <constraint firstItem="NCD-ZT-aZv" firstAttribute="leading" secondItem="ikW-nz-gUM" secondAttribute="leading" id="SSK-WB-5sX"/>
                             <constraint firstItem="Hxf-BO-nrF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TWC-MQ-bh4"/>
+                            <constraint firstItem="KH4-1w-mgX" firstAttribute="centerX" secondItem="NCD-ZT-aZv" secondAttribute="centerX" id="U57-D8-qyZ"/>
+                            <constraint firstItem="JJZ-0H-QWW" firstAttribute="leading" secondItem="9iR-Jw-Au1" secondAttribute="trailing" constant="32" id="Wpk-ib-e4Q"/>
+                            <constraint firstItem="kCF-F6-300" firstAttribute="top" secondItem="JJZ-0H-QWW" secondAttribute="bottom" constant="8.3333333333333144" id="ZLN-Bg-kJZ"/>
                             <constraint firstItem="ikW-nz-gUM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZYy-LZ-NX9"/>
                             <constraint firstItem="Hxf-BO-nrF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ai3-9u-Hs4"/>
-                            <constraint firstItem="JJZ-0H-QWW" firstAttribute="top" secondItem="9iR-Jw-Au1" secondAttribute="bottom" constant="8" id="b1e-yx-JS4"/>
                             <constraint firstItem="ocV-Pd-doN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hqo-j9-eqT"/>
                             <constraint firstItem="9iR-Jw-Au1" firstAttribute="leading" secondItem="NCD-ZT-aZv" secondAttribute="leading" id="mn1-PV-Eeh"/>
+                            <constraint firstItem="JJZ-0H-QWW" firstAttribute="top" secondItem="9iR-Jw-Au1" secondAttribute="bottom" constant="24" id="njQ-QT-c75"/>
                             <constraint firstItem="9iR-Jw-Au1" firstAttribute="top" secondItem="NCD-ZT-aZv" secondAttribute="bottom" constant="24" id="rQa-4F-LOe"/>
                             <constraint firstItem="ocV-Pd-doN" firstAttribute="centerX" secondItem="NCD-ZT-aZv" secondAttribute="centerX" id="rYR-ti-GQ7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="ikW-nz-gUM" secondAttribute="trailing" constant="282" id="uuZ-vv-rGT"/>
+                            <constraint firstItem="JJZ-0H-QWW" firstAttribute="centerX" secondItem="NCD-ZT-aZv" secondAttribute="centerX" id="v6d-Tk-tX9"/>
+                            <constraint firstItem="kCF-F6-300" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="yNJ-d6-BHz"/>
                         </constraints>
                     </view>
                 </viewController>
