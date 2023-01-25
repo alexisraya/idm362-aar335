@@ -2,7 +2,7 @@
 ## Research
 *I want to create a vitamin tracker app where users can track the vitamins they’re taking and get daily reminders to take their vitamins. It would base how much of each vitamin they needs on their weight and height. My target users would be young adults who are beginning to be aware of their health and want to stay on top of their vitamins and nutrients.*
 
-IOS Apps (top 3 when you search “vitamin tracker” in the app store”: Round Health, Vitamin Book
+IOS Apps (top 2 when you search “vitamin tracker” in the app store): Round Health, Vitamin Book
 
 ************************Round Health************************
 
