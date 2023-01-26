@@ -16,96 +16,93 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxf-BO-nrF">
-                                <rect key="frame" x="115.66666666666669" y="59" width="162" height="55"/>
+                                <rect key="frame" x="115.66666666666669" y="79" width="162" height="55"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="46"/>
                                 <color key="textColor" cyan="0.0" magenta="0.040000000000000001" yellow="0.29999999999999999" black="0.13853287459999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikW-nz-gUM">
-                                <rect key="frame" x="16" y="121" width="95" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cyan="0.0" magenta="0.02" yellow="0.12" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NCD-ZT-aZv">
-                                <rect key="frame" x="16" y="153" width="361" height="34.333333333333343"/>
-                                <color key="backgroundColor" cyan="0.11" magenta="0.0" yellow="0.47999999999999998" black="0.56000000000000005" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="name"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iR-Jw-Au1">
-                                <rect key="frame" x="16" y="211.33333333333334" width="84" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cyan="0.0" magenta="0.02" yellow="0.12" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="JJZ-0H-QWW">
-                                <rect key="frame" x="132" y="259.33333333333331" width="129" height="62"/>
-                                <color key="backgroundColor" cyan="0.11" magenta="0.0" yellow="0.47999999999999998" black="0.56000000000000005" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                <color key="tintColor" cyan="0.0" magenta="0.040000000000000001" yellow="0.29999999999999999" black="0.13853287459999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hvq-pN-B5R">
+                                <rect key="frame" x="20" y="154" width="343.66666666666669" height="295"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikW-nz-gUM">
+                                        <rect key="frame" x="0.0" y="0.0" width="343.66666666666669" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" cyan="0.0" magenta="0.02" yellow="0.12" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NCD-ZT-aZv">
+                                        <rect key="frame" x="0.0" y="54" width="343.66666666666669" height="34"/>
+                                        <color key="backgroundColor" cyan="0.11" magenta="0.0" yellow="0.47999999999999998" black="0.56000000000000005" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iR-Jw-Au1">
+                                        <rect key="frame" x="0.0" y="118" width="343.66666666666669" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" cyan="0.0" magenta="0.02" yellow="0.12" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" highlighted="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="JJZ-0H-QWW">
+                                        <rect key="frame" x="0.0" y="172" width="343.66666666666669" height="62"/>
+                                        <color key="backgroundColor" cyan="0.11" magenta="0.0" yellow="0.47999999999999998" black="0.56000000000000005" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <color key="tintColor" cyan="0.0" magenta="0.040000000000000001" yellow="0.29999999999999999" black="0.13853287459999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="62" id="ofQ-PW-adx"/>
+                                        </constraints>
+                                        <date key="minimumDate" timeIntervalSinceReferenceDate="-1609419600">
+                                            <!--1950-01-01 11:00:00 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="184" translatesAutoresizingMaskIntoConstraints="NO" id="fvA-jE-UYK">
+                                        <rect key="frame" x="0.0" y="264" width="343.66666666666669" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCF-F6-300">
+                                                <rect key="frame" x="0.0" y="0.0" width="110.66666666666667" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" cyan="0.0" magenta="0.02" yellow="0.12" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KH4-1w-mgX">
+                                                <rect key="frame" x="294.66666666666669" y="0.0" width="51" height="31"/>
+                                                <color key="onTintColor" cyan="0.0" magenta="0.42999999999999999" yellow="0.80000000000000004" black="0.26000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                <color key="thumbTintColor" cyan="0.0" magenta="0.040000000000000001" yellow="0.29999999999999999" black="0.13853287459999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="ofQ-PW-adx"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="343.67000000000002" id="uk3-OE-Tu7"/>
                                 </constraints>
-                                <date key="minimumDate" timeIntervalSinceReferenceDate="-1609419600">
-                                    <!--1950-01-01 11:00:00 +0000-->
-                                </date>
-                            </datePicker>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocV-Pd-doN">
-                                <rect key="frame" x="130" y="773" width="133" height="45"/>
+                                <rect key="frame" x="130.33333333333337" y="753" width="132.66666666666663" height="45"/>
                                 <color key="backgroundColor" cyan="0.0" magenta="0.42999999999999999" yellow="0.80000000000000004" black="0.26000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="BjS-mO-X1j"/>
+                                    <constraint firstAttribute="height" constant="45" id="eu4-Nc-C0c"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Save Changes">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCF-F6-300">
-                                <rect key="frame" x="20.000000000000007" y="329.66666666666669" width="110.66666666666669" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cyan="0.0" magenta="0.02" yellow="0.12" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KH4-1w-mgX">
-                                <rect key="frame" x="324" y="326" width="51" height="31"/>
-                                <color key="onTintColor" cyan="0.0" magenta="0.42999999999999999" yellow="0.80000000000000004" black="0.26000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                <color key="thumbTintColor" cyan="0.0" magenta="0.040000000000000001" yellow="0.29999999999999999" black="0.13853287459999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" cyan="0.26000000000000001" magenta="0.0" yellow="0.56000000000000005" black="0.79000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="KH4-1w-mgX" firstAttribute="centerY" secondItem="kCF-F6-300" secondAttribute="centerY" id="DZK-Pt-FGV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KH4-1w-mgX" secondAttribute="bottom" constant="461" id="EAw-jX-f7i"/>
-                            <constraint firstItem="NCD-ZT-aZv" firstAttribute="top" secondItem="ikW-nz-gUM" secondAttribute="bottom" constant="8" id="FII-sL-b1b"/>
-                            <constraint firstItem="NCD-ZT-aZv" firstAttribute="centerX" secondItem="Hxf-BO-nrF" secondAttribute="centerX" id="JL3-2J-UYe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="9iR-Jw-Au1" secondAttribute="trailing" constant="293" id="KRQ-e2-GTQ"/>
-                            <constraint firstItem="ikW-nz-gUM" firstAttribute="top" relation="lessThanOrEqual" secondItem="Hxf-BO-nrF" secondAttribute="top" constant="62" id="Nkx-RQ-6g9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="kCF-F6-300" secondAttribute="trailing" constant="266.67000000000002" id="RnY-3k-oqg"/>
-                            <constraint firstItem="NCD-ZT-aZv" firstAttribute="leading" secondItem="ikW-nz-gUM" secondAttribute="leading" id="SSK-WB-5sX"/>
-                            <constraint firstItem="Hxf-BO-nrF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TWC-MQ-bh4"/>
-                            <constraint firstItem="JJZ-0H-QWW" firstAttribute="leading" secondItem="9iR-Jw-Au1" secondAttribute="trailing" constant="32" id="Wpk-ib-e4Q"/>
-                            <constraint firstItem="kCF-F6-300" firstAttribute="top" secondItem="JJZ-0H-QWW" secondAttribute="bottom" constant="8.3333333333333144" id="ZLN-Bg-kJZ"/>
-                            <constraint firstItem="ikW-nz-gUM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZYy-LZ-NX9"/>
+                            <constraint firstItem="ocV-Pd-doN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PCa-U0-dyo"/>
+                            <constraint firstItem="Hxf-BO-nrF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="TWC-MQ-bh4"/>
+                            <constraint firstItem="hvq-pN-B5R" firstAttribute="top" secondItem="Hxf-BO-nrF" secondAttribute="bottom" constant="20" id="aNq-Ob-tLr"/>
                             <constraint firstItem="Hxf-BO-nrF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ai3-9u-Hs4"/>
-                            <constraint firstItem="ocV-Pd-doN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hqo-j9-eqT"/>
-                            <constraint firstItem="9iR-Jw-Au1" firstAttribute="leading" secondItem="NCD-ZT-aZv" secondAttribute="leading" id="mn1-PV-Eeh"/>
-                            <constraint firstItem="JJZ-0H-QWW" firstAttribute="top" secondItem="9iR-Jw-Au1" secondAttribute="bottom" constant="24" id="njQ-QT-c75"/>
-                            <constraint firstItem="KH4-1w-mgX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="par-AV-gPQ"/>
-                            <constraint firstItem="9iR-Jw-Au1" firstAttribute="top" secondItem="NCD-ZT-aZv" secondAttribute="bottom" constant="24" id="rQa-4F-LOe"/>
-                            <constraint firstItem="ocV-Pd-doN" firstAttribute="centerX" secondItem="NCD-ZT-aZv" secondAttribute="centerX" id="rYR-ti-GQ7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="ikW-nz-gUM" secondAttribute="trailing" constant="282" id="uuZ-vv-rGT"/>
-                            <constraint firstItem="JJZ-0H-QWW" firstAttribute="centerX" secondItem="NCD-ZT-aZv" secondAttribute="centerX" id="v6d-Tk-tX9"/>
-                            <constraint firstItem="kCF-F6-300" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yNJ-d6-BHz"/>
+                            <constraint firstItem="hvq-pN-B5R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dtR-Sl-sdu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ocV-Pd-doN" secondAttribute="bottom" constant="20" id="yvO-8m-za9"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="112.8" y="53.201970443349758"/>
         </scene>
     </scenes>
 </document>
