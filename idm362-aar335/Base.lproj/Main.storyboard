@@ -21,8 +21,8 @@
                                 <color key="textColor" cyan="0.0" magenta="0.040000000000000001" yellow="0.29999999999999999" black="0.13853287459999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hvq-pN-B5R">
-                                <rect key="frame" x="20" y="154" width="343.66666666666669" height="295"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" axis="vertical" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="hvq-pN-B5R">
+                                <rect key="frame" x="20" y="154" width="343.66666666666669" height="256"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikW-nz-gUM">
                                         <rect key="frame" x="0.0" y="0.0" width="343.66666666666669" height="24"/>
@@ -31,31 +31,30 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NCD-ZT-aZv">
-                                        <rect key="frame" x="0.0" y="54" width="343.66666666666669" height="34"/>
+                                        <rect key="frame" x="0.0" y="63" width="343.66666666666669" height="34"/>
                                         <color key="backgroundColor" cyan="0.11" magenta="0.0" yellow="0.47999999999999998" black="0.56000000000000005" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="name"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iR-Jw-Au1">
-                                        <rect key="frame" x="0.0" y="118" width="343.66666666666669" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" cyan="0.0" magenta="0.02" yellow="0.12" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <datePicker contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" highlighted="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="JJZ-0H-QWW">
-                                        <rect key="frame" x="0.0" y="172" width="343.66666666666669" height="62"/>
-                                        <color key="backgroundColor" cyan="0.11" magenta="0.0" yellow="0.47999999999999998" black="0.56000000000000005" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                        <color key="tintColor" cyan="0.0" magenta="0.040000000000000001" yellow="0.29999999999999999" black="0.13853287459999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="62" id="ofQ-PW-adx"/>
-                                        </constraints>
-                                        <date key="minimumDate" timeIntervalSinceReferenceDate="-1609419600">
-                                            <!--1950-01-01 11:00:00 +0000-->
-                                        </date>
-                                    </datePicker>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="QnM-Dy-Unk">
+                                        <rect key="frame" x="0.0" y="136" width="343.66666666666669" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iR-Jw-Au1">
+                                                <rect key="frame" x="0.0" y="0.0" width="73.333333333333329" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" cyan="0.0" magenta="0.02" yellow="0.12" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="VDG-LM-3vW">
+                                                <rect key="frame" x="105.33333333333333" y="0.0" width="238.33333333333337" height="50"/>
+                                                <color key="backgroundColor" red="0.4622500712" green="0.53349246309999998" blue="0.3710155074" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.68548351529999996" green="0.66051137449999997" blue="0.52939087149999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </datePicker>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="184" translatesAutoresizingMaskIntoConstraints="NO" id="fvA-jE-UYK">
-                                        <rect key="frame" x="0.0" y="264" width="343.66666666666669" height="31"/>
+                                        <rect key="frame" x="0.0" y="225" width="343.66666666666669" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCF-F6-300">
                                                 <rect key="frame" x="0.0" y="0.0" width="110.66666666666667" height="31"/>
@@ -88,7 +87,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" cyan="0.26000000000000001" magenta="0.0" yellow="0.56000000000000005" black="0.79000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <color key="backgroundColor" red="0.300667291655691" green="0.34700640193139665" blue="0.24132441446103878" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ocV-Pd-doN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PCa-U0-dyo"/>
@@ -102,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112.8" y="53.201970443349758"/>
+            <point key="canvasLocation" x="112.21374045801527" y="52.816901408450704"/>
         </scene>
     </scenes>
 </document>
