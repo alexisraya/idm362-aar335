@@ -222,10 +222,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vzr-8v-qYM">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Alexis Raya" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vzr-8v-qYM">
                                         <rect key="frame" x="0.0" y="35.333333333333343" width="300" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKf-Ot-wSR">
                                         <rect key="frame" x="0.0" y="84.333333333333314" width="300" height="119"/>
@@ -236,8 +236,11 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <datePicker contentMode="scaleAspectFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="euj-Ub-8WV">
+                                            <datePicker contentMode="scaleAspectFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euj-Ub-8WV">
                                                 <rect key="frame" x="63.666666666666671" y="0.0" width="236.33333333333331" height="119"/>
+                                                <date key="date" timeIntervalSinceReferenceDate="47790985.455016971">
+                                                    <!--2002-07-08 03:16:25 +0000-->
+                                                </date>
                                             </datePicker>
                                         </subviews>
                                     </stackView>
@@ -266,8 +269,11 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="tlV-9u-gOn">
-                                                <rect key="frame" x="115" y="0.0" width="203" height="127"/>
+                                            <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlV-9u-gOn">
+                                                <rect key="frame" x="114.66666666666664" y="0.0" width="185.33333333333337" height="127"/>
+                                                <date key="date" timeIntervalSinceReferenceDate="696951000.311849">
+                                                    <!--2023-02-01 13:30:00 +0000-->
+                                                </date>
                                             </datePicker>
                                         </subviews>
                                     </stackView>
