@@ -7,22 +7,29 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Acme-Regular.ttf">
+            <string>Acme-Regular</string>
+        </array>
+        <array key="SignikaNegative-VariableFont_wght.ttf">
+            <string>SignikaNegative-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="s3T-Is-WD1">
             <objects>
                 <tabBarController id="Sec-vd-KlW" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VoS-B6-ugN">
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VoS-B6-ugN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" red="0.38039215686274508" green="0.1764705882352941" blue="0.094117647058823528" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="Beige"/>
+                        <color key="tintColor" name="Copy Black"/>
                         <color key="barTintColor" name="AccentColor"/>
-                        <color key="selectedImageTintColor" cyan="0.0" magenta="0.42999999999999999" yellow="0.80000000000000004" black="0.26000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <color key="selectedImageTintColor" name="Brown"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="H26-73-IIb"/>
-                        <segue destination="Me2-Wx-0Za" kind="relationship" relationship="viewControllers" id="Qnl-Ep-PUU"/>
                         <segue destination="eoC-Hq-Gt1" kind="relationship" relationship="viewControllers" id="CAY-cF-K6s"/>
                         <segue destination="pm0-Fj-b9I" kind="relationship" relationship="viewControllers" id="CXn-OS-uRj"/>
                     </connections>
@@ -40,52 +47,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Forget to Take Your Vitamins" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9A-GC-VFE">
-                                <rect key="frame" x="16" y="99" width="361" height="81.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="16" y="99" width="361" height="86.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Acme-Regular" family="Acme" pointSize="34"/>
+                                <color key="textColor" name="Copy Black"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder Set for 8:30am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebW-dH-8ug">
-                                <rect key="frame" x="16" y="200.33333333333334" width="219.66666666666666" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="16" y="205.33333333333334" width="211.33333333333334" height="24.666666666666657"/>
+                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="20"/>
+                                <color key="textColor" name="Copy Black"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ma6-S3-k23">
-                                <rect key="frame" x="16" y="314.33333333333331" width="289.33333333333331" height="125.66666666666669"/>
+                                <rect key="frame" x="16" y="320" width="283.66666666666669" height="127.66666666666669"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Vitamins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mr7-cv-9Ew">
-                                        <rect key="frame" x="0.0" y="0.0" width="289.33333333333331" height="33.666666666666664"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="283.66666666666669" height="35.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="Acme-Regular" family="Acme" pointSize="28"/>
+                                        <color key="textColor" name="Copy Black"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oLG-oG-p7x">
-                                        <rect key="frame" x="0.0" y="48.666666666666686" width="289.33333333333331" height="31"/>
+                                        <rect key="frame" x="0.0" y="50.666666666666686" width="283.66666666666669" height="31"/>
                                         <subviews>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="X7u-MD-wBU">
                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.59999999999999998" green="0.63921568630000003" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One a Day Multivitamin (1 Pill)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Te-Ux-ti9">
-                                                <rect key="frame" x="64.000000000000014" y="0.0" width="225.33333333333337" height="31"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="63.999999999999986" y="0.0" width="219.66666666666663" height="31"/>
+                                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="17"/>
+                                                <color key="textColor" name="Copy Black"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mbz-v9-aZW">
-                                        <rect key="frame" x="0.0" y="94.666666666666686" width="289.33333333333331" height="31"/>
+                                        <rect key="frame" x="0.0" y="96.666666666666686" width="283.66666666666669" height="31"/>
                                         <subviews>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qce-mY-Nil">
                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.59999999999999998" green="0.63921568630000003" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitamin D (500 mg)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKl-Ow-4FX">
-                                                <rect key="frame" x="64.000000000000014" y="0.0" width="225.33333333333337" height="31"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="63.999999999999986" y="0.0" width="219.66666666666663" height="31"/>
+                                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="17"/>
+                                                <color key="textColor" name="Copy Black"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -129,55 +136,55 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mIk-s5-OQD">
-                                <rect key="frame" x="25" y="393" width="183" height="91"/>
+                                <rect key="frame" x="25" y="393" width="174.66666666666666" height="93"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="raQ-bl-AKn">
-                                        <rect key="frame" x="0.0" y="0.0" width="183" height="20.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nf5-6W-Vup">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.333333333333329" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="82.666666666666671" height="21"/>
+                                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="17"/>
+                                                <color key="textColor" name="Copy Black"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alexis Raya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFF-39-J19">
-                                                <rect key="frame" x="97.333333333333314" y="0.0" width="85.666666666666686" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="92.666666666666686" y="0.0" width="82" height="21"/>
+                                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="17"/>
+                                                <color key="textColor" name="Copy Black"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lqg-TX-Hld">
-                                        <rect key="frame" x="0.0" y="35.333333333333314" width="183" height="20.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="36" width="174.66666666666666" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qof-E7-k8i">
-                                                <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="21"/>
+                                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="17"/>
+                                                <color key="textColor" name="Copy Black"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 years old" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdj-zt-Wav">
-                                                <rect key="frame" x="89.333333333333314" y="0.0" width="93.666666666666686" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="87.666666666666686" y="0.0" width="87" height="21"/>
+                                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="17"/>
+                                                <color key="textColor" name="Copy Black"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VsN-m1-tPQ">
-                                        <rect key="frame" x="0.0" y="70.666666666666686" width="183" height="20.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="72" width="174.66666666666666" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3D-Hg-ann">
-                                                <rect key="frame" x="0.0" y="0.0" width="68.333333333333329" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="66.333333333333329" height="21"/>
+                                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="17"/>
+                                                <color key="textColor" name="Copy Black"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="July 7th 2002" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J26-YM-QBa">
-                                                <rect key="frame" x="78.333333333333314" y="0.0" width="104.66666666666669" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="76.333333333333343" y="0.0" width="98.333333333333343" height="21"/>
+                                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="17"/>
+                                                <color key="textColor" name="Copy Black"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -198,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtS-cX-W9W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1816.030534351145" y="780.98591549295782"/>
+            <point key="canvasLocation" x="-2921" y="-440"/>
         </scene>
         <!--Settings-->
         <scene sceneID="VdV-cr-K0P">
@@ -209,36 +216,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwf-EW-gpa">
-                                <rect key="frame" x="41" y="99" width="162" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="41" y="99" width="162" height="50.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Acme-Regular" family="Acme" pointSize="40"/>
+                                <color key="textColor" name="Copy Black"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6f8-vz-f0B">
-                                <rect key="frame" x="41" y="174.99999999999997" width="300" height="391.33333333333326"/>
+                                <rect key="frame" x="41" y="177.66666666666663" width="300" height="392"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zol-pe-w4z">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="20.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="21"/>
+                                        <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="17"/>
+                                        <color key="textColor" name="Copy Black"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Alexis Raya" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vzr-8v-qYM">
-                                        <rect key="frame" x="0.0" y="35.333333333333343" width="300" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Alexis Raya" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vzr-8v-qYM">
+                                        <rect key="frame" x="0.0" y="36" width="300" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="name"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKf-Ot-wSR">
-                                        <rect key="frame" x="0.0" y="84.333333333333314" width="300" height="119"/>
+                                        <rect key="frame" x="0.0" y="85.000000000000028" width="300" height="119"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmD-qB-fJr">
-                                                <rect key="frame" x="0.0" y="0.0" width="63.666666666666664" height="119"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="62" height="119"/>
+                                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="17"/>
+                                                <color key="textColor" name="Copy Black"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleAspectFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euj-Ub-8WV">
-                                                <rect key="frame" x="63.666666666666671" y="0.0" width="236.33333333333331" height="119"/>
+                                                <rect key="frame" x="62" y="0.0" width="238" height="119"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="47790985.455016971">
                                                     <!--2002-07-08 03:16:25 +0000-->
                                                 </date>
@@ -246,12 +253,12 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3DS-uD-KYR">
-                                        <rect key="frame" x="0.0" y="218.33333333333331" width="300" height="31"/>
+                                        <rect key="frame" x="0.0" y="219.00000000000003" width="300" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxw-Pe-UtW">
                                                 <rect key="frame" x="0.0" y="0.0" width="251" height="31"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="17"/>
+                                                <color key="textColor" name="Copy Black"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ODt-xB-gIy">
@@ -262,16 +269,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvO-kS-RXO">
-                                        <rect key="frame" x="0.0" y="264.33333333333331" width="300" height="127"/>
+                                        <rect key="frame" x="0.0" y="265" width="300" height="127"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzg-tE-ly1">
-                                                <rect key="frame" x="0.0" y="0.0" width="114.66666666666667" height="127"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="108.33333333333333" height="127"/>
+                                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="17"/>
+                                                <color key="textColor" name="Copy Black"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlV-9u-gOn">
-                                                <rect key="frame" x="114.66666666666664" y="0.0" width="185.33333333333337" height="127"/>
+                                                <rect key="frame" x="108.33333333333336" y="0.0" width="191.66666666666663" height="127"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="696951000.311849">
                                                     <!--2023-02-01 13:30:00 +0000-->
                                                 </date>
@@ -308,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSO-LU-cGD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-567" y="781"/>
+            <point key="canvasLocation" x="-1208" y="781"/>
         </scene>
         <!--Add-->
         <scene sceneID="eBA-qE-9mu">
@@ -319,33 +326,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Vitamin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laa-nB-a6D">
-                                <rect key="frame" x="41" y="99" width="232" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="41" y="99" width="232" height="50.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Acme-Regular" family="Acme" pointSize="40"/>
+                                <color key="textColor" name="Copy Black"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="k1R-wa-tSx">
-                                <rect key="frame" x="41" y="175" width="300" height="153.66666666666663"/>
+                                <rect key="frame" x="41" y="177.66666666666666" width="300" height="154.99999999999997"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the name of your vitamin?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cug-8N-m6s">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="20.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="21"/>
+                                        <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="17"/>
+                                        <color key="textColor" name="Copy Black"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="example: Vitamin A" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YNt-KU-Pab">
-                                        <rect key="frame" x="0.0" y="35.333333333333343" width="300" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="example: Vitamin A" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YNt-KU-Pab">
+                                        <rect key="frame" x="0.0" y="36" width="300" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="name"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the dosage?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbg-Un-sKi">
-                                        <rect key="frame" x="0.0" y="84.333333333333314" width="300" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="85.000000000000028" width="300" height="21"/>
+                                        <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="17"/>
+                                        <color key="textColor" name="Copy Black"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="example: 25mg" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VHz-z9-xy9">
-                                        <rect key="frame" x="0.0" y="119.66666666666669" width="300" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="example: 25mg" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VHz-z9-xy9">
+                                        <rect key="frame" x="0.0" y="121.00000000000003" width="300" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="name"/>
                                     </textField>
@@ -389,10 +396,19 @@
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
-            <color red="0.40799999237060547" green="0.24300000071525574" blue="0.6600000262260437" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Background Color">
-            <color red="0.875" green="0.93699997663497925" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.87450980392156863" green="0.93725490196078431" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Beige">
+            <color red="0.74117647058823533" green="0.6588235294117647" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Brown">
+            <color red="0.38039215686274508" green="0.1764705882352941" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Copy Black">
+            <color red="0.054901960784313725" green="0.031372549019607843" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

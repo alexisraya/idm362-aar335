@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		024CC03D29954A1800CA38F7 /* Acme-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 024CC03C29954A1800CA38F7 /* Acme-Regular.ttf */; };
+		024CC03F29954A8D00CA38F7 /* BreeSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 024CC03E29954A8D00CA38F7 /* BreeSerif-Regular.ttf */; };
+		024CC04129954AA800CA38F7 /* SignikaNegative-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 024CC04029954AA800CA38F7 /* SignikaNegative-VariableFont_wght.ttf */; };
 		026C85AB297990F700930CA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C85AA297990F700930CA3 /* AppDelegate.swift */; };
 		026C85AD297990F700930CA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C85AC297990F700930CA3 /* SceneDelegate.swift */; };
 		026C85AF297990F700930CA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C85AE297990F700930CA3 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		024CC03C29954A1800CA38F7 /* Acme-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Acme-Regular.ttf"; path = "../../../../../../Downloads/Acme,Bree_Serif,Signika_Negative/Acme/Acme-Regular.ttf"; sourceTree = "<group>"; };
+		024CC03E29954A8D00CA38F7 /* BreeSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BreeSerif-Regular.ttf"; path = "../../../../../../Downloads/Acme,Bree_Serif,Signika_Negative/Bree_Serif/BreeSerif-Regular.ttf"; sourceTree = "<group>"; };
+		024CC04029954AA800CA38F7 /* SignikaNegative-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SignikaNegative-VariableFont_wght.ttf"; path = "../../../../../../Downloads/Acme,Bree_Serif,Signika_Negative/Signika_Negative/SignikaNegative-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		026C85A7297990F700930CA3 /* idm362-aar335.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "idm362-aar335.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		026C85AA297990F700930CA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		026C85AC297990F700930CA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		024CC03B299549E800CA38F7 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				024CC03C29954A1800CA38F7 /* Acme-Regular.ttf */,
+				024CC03E29954A8D00CA38F7 /* BreeSerif-Regular.ttf */,
+				024CC04029954AA800CA38F7 /* SignikaNegative-VariableFont_wght.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		026C859E297990F600930CA3 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +72,7 @@
 		026C85A9297990F700930CA3 /* idm362-aar335 */ = {
 			isa = PBXGroup;
 			children = (
+				024CC03B299549E800CA38F7 /* fonts */,
 				026C85AA297990F700930CA3 /* AppDelegate.swift */,
 				026C85AC297990F700930CA3 /* SceneDelegate.swift */,
 				026C85AE297990F700930CA3 /* ViewController.swift */,
@@ -126,7 +143,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				026C85B7297990F800930CA3 /* LaunchScreen.storyboard in Resources */,
+				024CC03D29954A1800CA38F7 /* Acme-Regular.ttf in Resources */,
 				026C85B4297990F800930CA3 /* Assets.xcassets in Resources */,
+				024CC04129954AA800CA38F7 /* SignikaNegative-VariableFont_wght.ttf in Resources */,
+				024CC03F29954A8D00CA38F7 /* BreeSerif-Regular.ttf in Resources */,
 				026C85B2297990F700930CA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
