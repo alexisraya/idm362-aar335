@@ -13,6 +13,9 @@
 		026C85B2297990F700930CA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026C85B0297990F700930CA3 /* Main.storyboard */; };
 		026C85B4297990F800930CA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026C85B3297990F800930CA3 /* Assets.xcassets */; };
 		026C85B7297990F800930CA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026C85B5297990F800930CA3 /* LaunchScreen.storyboard */; };
+		02D61F4529BD4CAE0021CE6E /* BreeSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02D61F4229BD4CAE0021CE6E /* BreeSerif-Regular.ttf */; };
+		02D61F4629BD4CAE0021CE6E /* SignikaNegative-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02D61F4329BD4CAE0021CE6E /* SignikaNegative-VariableFont_wght.ttf */; };
+		02D61F4729BD4CAE0021CE6E /* Acme-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02D61F4429BD4CAE0021CE6E /* Acme-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		026C85B3297990F800930CA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		026C85B6297990F800930CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		026C85B8297990F800930CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02D61F4229BD4CAE0021CE6E /* BreeSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BreeSerif-Regular.ttf"; sourceTree = "<group>"; };
+		02D61F4329BD4CAE0021CE6E /* SignikaNegative-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignikaNegative-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		02D61F4429BD4CAE0021CE6E /* Acme-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acme-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +69,19 @@
 				026C85B3297990F800930CA3 /* Assets.xcassets */,
 				026C85B5297990F800930CA3 /* LaunchScreen.storyboard */,
 				026C85B8297990F800930CA3 /* Info.plist */,
+				02D61F4129BD4CAE0021CE6E /* fonts */,
 			);
 			path = "idm362-aar335";
+			sourceTree = "<group>";
+		};
+		02D61F4129BD4CAE0021CE6E /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				02D61F4229BD4CAE0021CE6E /* BreeSerif-Regular.ttf */,
+				02D61F4329BD4CAE0021CE6E /* SignikaNegative-VariableFont_wght.ttf */,
+				02D61F4429BD4CAE0021CE6E /* Acme-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +143,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				026C85B7297990F800930CA3 /* LaunchScreen.storyboard in Resources */,
+				02D61F4729BD4CAE0021CE6E /* Acme-Regular.ttf in Resources */,
 				026C85B4297990F800930CA3 /* Assets.xcassets in Resources */,
 				026C85B2297990F700930CA3 /* Main.storyboard in Resources */,
+				02D61F4629BD4CAE0021CE6E /* SignikaNegative-VariableFont_wght.ttf in Resources */,
+				02D61F4529BD4CAE0021CE6E /* BreeSerif-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
