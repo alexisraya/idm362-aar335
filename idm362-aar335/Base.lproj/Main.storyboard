@@ -6,7 +6,6 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -73,25 +72,27 @@
                                     <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c7u-KT-AaA"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FlX-no-19K">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FlX-no-19K">
                                 <rect key="frame" x="16" y="250" width="361" height="400"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" name="Rust"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="XR3-eq-kyo"/>
                                 </constraints>
-                                <color key="separatorColor" name="Background Color"/>
+                                <color key="separatorColor" name="Rust"/>
                                 <color key="sectionIndexColor" name="Copy Black"/>
-                                <color key="sectionIndexBackgroundColor" name="Background Color"/>
+                                <color key="sectionIndexBackgroundColor" name="Grey"/>
                                 <color key="sectionIndexTrackingBackgroundColor" name="Background Color"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="x1S-BS-Gu3">
-                                        <rect key="frame" x="0.0" y="50" width="361" height="43.666667938232422"/>
+                                        <rect key="frame" x="20" y="55.333332061767578" width="321" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x1S-BS-Gu3" id="aME-xw-21T">
-                                            <rect key="frame" x="0.0" y="0.0" width="361" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="321" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" name="White"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="White"/>
+                                        <color key="tintColor" name="Copy Black"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -555,11 +556,11 @@
         <namedColor name="Peach">
             <color red="0.94900000095367432" green="0.84299999475479126" blue="0.81999999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="Rust">
+            <color red="0.83899998664855957" green="0.34099999070167542" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="White">
             <color red="0.94499999284744263" green="0.9570000171661377" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
