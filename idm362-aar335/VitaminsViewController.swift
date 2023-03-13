@@ -18,7 +18,6 @@ class VitaminsViewController: UIViewController {
         
         label.text = vitamin
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Delete", style: .done, target: self, action: #selector(deleteVitamin))
     }
     
     @objc func deleteVitamin(){

@@ -46,20 +46,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Forget to Take Your Vitamins" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9A-GC-VFE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Don't Forget to Take Your Vitamins" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9A-GC-VFE">
                                 <rect key="frame" x="16" y="99" width="361" height="101.33333333333331"/>
                                 <fontDescription key="fontDescription" name="Acme-Regular" family="Acme" pointSize="40"/>
                                 <color key="textColor" name="Copy Black"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder Set for 8:30am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebW-dH-8ug">
-                                <rect key="frame" x="16" y="220.33333333333334" width="190" height="22.333333333333343"/>
+                                <rect key="frame" x="16" y="220.33333333333334" width="190" height="22.666666666666657"/>
                                 <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="18"/>
                                 <color key="textColor" name="Copy Black"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Os-h6-NqL">
-                                <rect key="frame" x="18" y="689" width="131" height="37"/>
+                                <rect key="frame" x="125" y="602" width="143" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="143" id="e8E-2v-jue"/>
+                                </constraints>
                                 <color key="tintColor" name="Grey"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add a Vitamin">
@@ -72,10 +75,10 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FlX-no-19K">
-                                <rect key="frame" x="16" y="250" width="361" height="400"/>
+                                <rect key="frame" x="16" y="263" width="361" height="300"/>
                                 <color key="tintColor" name="Rust"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="XR3-eq-kyo"/>
+                                    <constraint firstAttribute="height" constant="300" id="RJm-Az-p73"/>
                                 </constraints>
                                 <color key="separatorColor" name="Rust"/>
                                 <color key="sectionIndexColor" name="Copy Black"/>
@@ -99,13 +102,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Os-h6-NqL" secondAttribute="trailing" constant="244" id="4gb-At-7B3"/>
                             <constraint firstItem="0Os-h6-NqL" firstAttribute="top" secondItem="FlX-no-19K" secondAttribute="bottom" constant="39" id="CQz-oH-SQE"/>
                             <constraint firstItem="N9A-GC-VFE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GTd-2C-hwE"/>
                             <constraint firstItem="ebW-dH-8ug" firstAttribute="top" secondItem="N9A-GC-VFE" secondAttribute="bottom" constant="20" id="HQB-xh-2vg"/>
-                            <constraint firstItem="0Os-h6-NqL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SzU-Rj-bqb"/>
-                            <constraint firstItem="FlX-no-19K" firstAttribute="top" secondItem="ebW-dH-8ug" secondAttribute="bottom" constant="7.3333333333333428" id="TmY-Dc-3M0"/>
+                            <constraint firstItem="FlX-no-19K" firstAttribute="top" secondItem="ebW-dH-8ug" secondAttribute="bottom" constant="20" id="TmY-Dc-3M0"/>
                             <constraint firstItem="N9A-GC-VFE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XWl-ED-4Yu"/>
+                            <constraint firstItem="0Os-h6-NqL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z3r-Hc-3KQ"/>
                             <constraint firstItem="N9A-GC-VFE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="idJ-lU-cZy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ebW-dH-8ug" secondAttribute="trailing" symbolic="YES" id="kMi-6i-nDa"/>
                             <constraint firstItem="ebW-dH-8ug" firstAttribute="leading" secondItem="N9A-GC-VFE" secondAttribute="leading" id="nzO-x0-ag3"/>
@@ -124,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3022.1374045801526" y="780.98591549295782"/>
+            <point key="canvasLocation" x="-3023.1999999999998" y="780.35982008995506"/>
         </scene>
         <!--Settings-->
         <scene sceneID="VdV-cr-K0P">
@@ -266,8 +268,9 @@
                                 <color key="textColor" name="Copy Black"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jj9-sf-tUE">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Example: Vitamin A" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jj9-sf-tUE">
                                 <rect key="frame" x="40" y="190" width="297" height="34"/>
+                                <color key="textColor" name="Copy Black"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -314,14 +317,47 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXT-EP-ndB">
+                                <rect key="frame" x="163" y="746.66666666666663" width="75" height="39"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Delete">
+                                    <fontDescription key="titleFontDescription" name="BreeSerif-Regular" family="Bree Serif" pointSize="18"/>
+                                    <color key="baseForegroundColor" name="White"/>
+                                    <color key="baseBackgroundColor" name="Rust"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21v-xJ-BCM">
+                                <rect key="frame" x="114" y="691" width="168" height="39"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="I took my Vitamin">
+                                    <fontDescription key="titleFontDescription" name="BreeSerif-Regular" family="Bree Serif" pointSize="18"/>
+                                    <color key="baseForegroundColor" name="White"/>
+                                    <color key="baseBackgroundColor" name="Green"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500 mg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpp-vl-yXz">
+                                <rect key="frame" x="41" y="142" width="57" height="23"/>
+                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SLF-Gj-8yA"/>
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
+                            <constraint firstItem="SLF-Gj-8yA" firstAttribute="trailing" secondItem="Zpp-vl-yXz" secondAttribute="trailing" constant="295" id="3fy-Zs-fbp"/>
                             <constraint firstItem="SLF-Gj-8yA" firstAttribute="bottom" secondItem="IGX-Yt-fh9" secondAttribute="bottom" constant="684" id="8BI-in-A7F"/>
+                            <constraint firstItem="CXT-EP-ndB" firstAttribute="top" secondItem="21v-xJ-BCM" secondAttribute="bottom" constant="16.666666666666629" id="EKn-QI-SAA"/>
+                            <constraint firstItem="Zpp-vl-yXz" firstAttribute="top" secondItem="IGX-Yt-fh9" secondAttribute="bottom" constant="8" symbolic="YES" id="FqA-tZ-9UM"/>
                             <constraint firstItem="SLF-Gj-8yA" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="IGX-Yt-fh9" secondAttribute="trailing" constant="217" id="Guo-EE-ilI"/>
+                            <constraint firstItem="Zpp-vl-yXz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IGX-Yt-fh9" secondAttribute="leading" id="Omt-vS-VOC"/>
+                            <constraint firstItem="SLF-Gj-8yA" firstAttribute="trailing" secondItem="CXT-EP-ndB" secondAttribute="trailing" constant="155" id="TVG-e5-lRw"/>
+                            <constraint firstItem="SLF-Gj-8yA" firstAttribute="trailing" secondItem="21v-xJ-BCM" secondAttribute="trailing" constant="111" id="Wm1-Ui-brV"/>
+                            <constraint firstItem="CXT-EP-ndB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SLF-Gj-8yA" secondAttribute="leading" id="YCt-u8-TXx"/>
                             <constraint firstItem="IGX-Yt-fh9" firstAttribute="leading" secondItem="SLF-Gj-8yA" secondAttribute="leading" constant="41" id="YDH-zU-hAb"/>
                             <constraint firstItem="IGX-Yt-fh9" firstAttribute="top" secondItem="SLF-Gj-8yA" secondAttribute="top" constant="40" id="YLg-gY-SXG"/>
+                            <constraint firstAttribute="bottom" secondItem="21v-xJ-BCM" secondAttribute="bottom" constant="122" id="fnZ-mr-dyj"/>
+                            <constraint firstItem="21v-xJ-BCM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SLF-Gj-8yA" secondAttribute="leading" id="kBv-Nn-cqw"/>
                         </constraints>
                     </view>
                     <connections>
@@ -330,7 +366,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ZW-8v-hh7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1518.3206106870227" y="780.98591549295782"/>
+            <point key="canvasLocation" x="1517" y="781"/>
         </scene>
     </scenes>
     <resources>
