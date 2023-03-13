@@ -8,12 +8,80 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var tableView: UITableView!
+    
+    var vitamins = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Get all current saved vitamins
+        self.title = "Home"
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        //Setup
+        
+        if !UserDefaults().bool(forKey: "setup") {
+            UserDefaults().set(true, forKey: "setup")
+            UserDefaults().set(0, forKey: "count")
+        }
+        
+        updateVitamins()
+    }
+    
+    func updateVitamins() {
+        vitamins.removeAll()
+        
+        guard let count = UserDefaults().value(forKey: "count") as? Int else{
+            return
+        }
+        
+        for x in 0..<count {
+            
+            if let vitamin = UserDefaults().value(forKey: "vitamin_\(x+1)") as? String{
+                vitamins.append(vitamin)
+            }
+            
+        }
+        
+        tableView.reloadData()
+        
+    }
+    
+    @IBAction func addButton(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(identifier: "entry") as! EntryViewController
+        vc.update = {
+            DispatchQueue.main.async {
+                self.updateVitamins()
+            }
+        }
+        self.present(vc, animated: true)
+    }
+    
+}
+
+extension ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+}
+
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return vitamins.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        cell.textLabel?.text = vitamins[indexPath.row]
+        
+        return cell
     }
     
     
 }
-
