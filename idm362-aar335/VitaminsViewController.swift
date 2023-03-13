@@ -8,11 +8,24 @@
 import UIKit
 
 class VitaminsViewController: UIViewController {
-
+    
+    @IBOutlet var label: UILabel!
+    
+    var vitamin: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        label.text = vitamin
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Delete", style: .done, target: self, action: #selector(deleteVitamin))
+    }
+    
+    @objc func deleteVitamin(){
+//        let newCount = count - 1
+//
+//        UserDefaults().setValue(newCount, forKey: "count")
+//        UserDefaults().set(nil, forKey: "vitamin_\(currentPosition)")
     }
     
 

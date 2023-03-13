@@ -66,6 +66,10 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let vc = storyboard?.instantiateViewController(identifier: "vitamin") as! VitaminsViewController
+        vc.vitamin = vitamins[indexPath.row]
+        self.present(vc, animated: true)
     }
     
 }
