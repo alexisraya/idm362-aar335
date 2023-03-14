@@ -21,10 +21,15 @@ class VitaminsViewController: UIViewController {
     }
     
     @objc func deleteVitamin(){
-//        let newCount = count - 1
-//
-//        UserDefaults().setValue(newCount, forKey: "count")
-//        UserDefaults().set(nil, forKey: "vitamin_\(currentPosition)")
+        guard let count = UserDefaults().value(forKey: "count") as? Int else{
+            return
+        }
+
+        let newCount = count - 1
+        
+        let currentPosition = 0
+        UserDefaults().setValue(newCount, forKey: "count")
+        UserDefaults().set(nil, forKey: "vitamin_\(currentPosition)")
     }
     
 
