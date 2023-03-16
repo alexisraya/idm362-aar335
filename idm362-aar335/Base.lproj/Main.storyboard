@@ -53,13 +53,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder Set for 8:30am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebW-dH-8ug">
-                                <rect key="frame" x="16" y="220.33333333333334" width="190" height="22.333333333333343"/>
+                                <rect key="frame" x="16" y="220.33333333333334" width="190" height="22.666666666666657"/>
                                 <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="18"/>
                                 <color key="textColor" name="Copy Black"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Os-h6-NqL">
-                                <rect key="frame" x="125" y="601.66666666666663" width="143" height="36.333333333333371"/>
+                                <rect key="frame" x="125" y="720.66666666666663" width="143" height="36.333333333333371"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="143" id="e8E-2v-jue"/>
                                 </constraints>
@@ -75,7 +75,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FlX-no-19K">
-                                <rect key="frame" x="16" y="262.66666666666669" width="361" height="300.00000000000006"/>
+                                <rect key="frame" x="16" y="263" width="361" height="300"/>
                                 <color key="tintColor" name="Rust"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="RJm-Az-p73"/>
@@ -102,7 +102,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
-                            <constraint firstItem="0Os-h6-NqL" firstAttribute="top" secondItem="FlX-no-19K" secondAttribute="bottom" constant="39" id="CQz-oH-SQE"/>
+                            <constraint firstItem="0Os-h6-NqL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="37" id="CQz-oH-SQE"/>
                             <constraint firstItem="N9A-GC-VFE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GTd-2C-hwE"/>
                             <constraint firstItem="ebW-dH-8ug" firstAttribute="top" secondItem="N9A-GC-VFE" secondAttribute="bottom" constant="20" id="HQB-xh-2vg"/>
                             <constraint firstItem="FlX-no-19K" firstAttribute="top" secondItem="ebW-dH-8ug" secondAttribute="bottom" constant="20" id="TmY-Dc-3M0"/>
@@ -143,38 +143,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6f8-vz-f0B">
-                                <rect key="frame" x="41" y="177.66666666666666" width="300" height="393.33333333333337"/>
+                                <rect key="frame" x="41" y="177.66666666666663" width="300" height="173"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zol-pe-w4z">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="22.333333333333332"/>
-                                        <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="18"/>
-                                        <color key="textColor" name="Copy Black"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Alexis Raya" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vzr-8v-qYM">
-                                        <rect key="frame" x="0.0" y="37.333333333333343" width="300" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="name"/>
-                                    </textField>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKf-Ot-wSR">
-                                        <rect key="frame" x="0.0" y="86.333333333333343" width="300" height="119"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmD-qB-fJr">
-                                                <rect key="frame" x="0.0" y="0.0" width="65.666666666666671" height="119"/>
-                                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="18"/>
-                                                <color key="textColor" name="Copy Black"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <datePicker contentMode="scaleAspectFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euj-Ub-8WV">
-                                                <rect key="frame" x="65.666666666666671" y="0.0" width="234.33333333333331" height="119"/>
-                                                <date key="date" timeIntervalSinceReferenceDate="47790985.455016971">
-                                                    <!--2002-07-08 03:16:25 +0000-->
-                                                </date>
-                                            </datePicker>
-                                        </subviews>
-                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3DS-uD-KYR">
-                                        <rect key="frame" x="0.0" y="220.33333333333334" width="300" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxw-Pe-UtW">
                                                 <rect key="frame" x="0.0" y="0.0" width="251" height="31"/>
@@ -190,7 +162,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvO-kS-RXO">
-                                        <rect key="frame" x="0.0" y="266.33333333333337" width="300" height="127"/>
+                                        <rect key="frame" x="0.0" y="46" width="300" height="127"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzg-tE-ly1">
                                                 <rect key="frame" x="0.0" y="0.0" width="114.66666666666667" height="127"/>
@@ -263,13 +235,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Vitamin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddx-PS-wU8">
-                                <rect key="frame" x="41.333333333333329" y="99" width="201.66666666666669" height="50.666666666666657"/>
+                                <rect key="frame" x="41" y="99" width="202" height="51"/>
                                 <fontDescription key="fontDescription" name="Acme-Regular" family="Acme" pointSize="40"/>
                                 <color key="textColor" name="Copy Black"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Example: Vitamin A" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jj9-sf-tUE">
-                                <rect key="frame" x="40" y="189.66666666666666" width="297" height="34"/>
+                                <rect key="frame" x="40" y="190" width="297" height="34"/>
                                 <color key="textColor" name="Copy Black"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -317,17 +289,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXT-EP-ndB">
-                                <rect key="frame" x="163" y="746.66666666666663" width="75" height="38.666666666666629"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Delete">
-                                    <fontDescription key="titleFontDescription" name="BreeSerif-Regular" family="Bree Serif" pointSize="18"/>
-                                    <color key="baseForegroundColor" name="White"/>
-                                    <color key="baseBackgroundColor" name="Rust"/>
-                                </buttonConfiguration>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500 mg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpp-vl-yXz">
+                                <rect key="frame" x="41" y="142" width="57" height="22.666666666666657"/>
+                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21v-xJ-BCM">
-                                <rect key="frame" x="114.33333333333333" y="691.33333333333337" width="167.66666666666669" height="38.666666666666629"/>
+                                <rect key="frame" x="113.33333333333333" y="742.66666666666663" width="167.33333333333337" height="38.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="I took my Vitamin">
                                     <fontDescription key="titleFontDescription" name="BreeSerif-Regular" family="Bree Serif" pointSize="18"/>
@@ -335,28 +304,19 @@
                                     <color key="baseBackgroundColor" name="Green"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500 mg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpp-vl-yXz">
-                                <rect key="frame" x="41" y="142" width="57" height="22.333333333333343"/>
-                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SLF-Gj-8yA"/>
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
                             <constraint firstItem="SLF-Gj-8yA" firstAttribute="trailing" secondItem="Zpp-vl-yXz" secondAttribute="trailing" constant="295" id="3fy-Zs-fbp"/>
                             <constraint firstItem="SLF-Gj-8yA" firstAttribute="bottom" secondItem="IGX-Yt-fh9" secondAttribute="bottom" constant="684" id="8BI-in-A7F"/>
-                            <constraint firstItem="CXT-EP-ndB" firstAttribute="top" secondItem="21v-xJ-BCM" secondAttribute="bottom" constant="16.666666666666629" id="EKn-QI-SAA"/>
                             <constraint firstItem="Zpp-vl-yXz" firstAttribute="top" secondItem="IGX-Yt-fh9" secondAttribute="bottom" constant="8" symbolic="YES" id="FqA-tZ-9UM"/>
                             <constraint firstItem="SLF-Gj-8yA" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="IGX-Yt-fh9" secondAttribute="trailing" constant="217" id="Guo-EE-ilI"/>
                             <constraint firstItem="Zpp-vl-yXz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IGX-Yt-fh9" secondAttribute="leading" id="Omt-vS-VOC"/>
-                            <constraint firstItem="SLF-Gj-8yA" firstAttribute="trailing" secondItem="CXT-EP-ndB" secondAttribute="trailing" constant="155" id="TVG-e5-lRw"/>
-                            <constraint firstItem="SLF-Gj-8yA" firstAttribute="trailing" secondItem="21v-xJ-BCM" secondAttribute="trailing" constant="111" id="Wm1-Ui-brV"/>
-                            <constraint firstItem="CXT-EP-ndB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SLF-Gj-8yA" secondAttribute="leading" id="YCt-u8-TXx"/>
+                            <constraint firstItem="SLF-Gj-8yA" firstAttribute="trailing" secondItem="21v-xJ-BCM" secondAttribute="trailing" constant="112.33333333333331" id="Wm1-Ui-brV"/>
                             <constraint firstItem="IGX-Yt-fh9" firstAttribute="leading" secondItem="SLF-Gj-8yA" secondAttribute="leading" constant="41" id="YDH-zU-hAb"/>
                             <constraint firstItem="IGX-Yt-fh9" firstAttribute="top" secondItem="SLF-Gj-8yA" secondAttribute="top" constant="40" id="YLg-gY-SXG"/>
-                            <constraint firstAttribute="bottom" secondItem="21v-xJ-BCM" secondAttribute="bottom" constant="122" id="fnZ-mr-dyj"/>
+                            <constraint firstItem="SLF-Gj-8yA" firstAttribute="bottom" secondItem="21v-xJ-BCM" secondAttribute="bottom" constant="37" id="fnZ-mr-dyj"/>
                             <constraint firstItem="21v-xJ-BCM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SLF-Gj-8yA" secondAttribute="leading" id="kBv-Nn-cqw"/>
                         </constraints>
                     </view>
