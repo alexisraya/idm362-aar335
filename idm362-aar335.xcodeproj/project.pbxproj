@@ -29,6 +29,9 @@
 		026C85B3297990F800930CA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		026C85B6297990F800930CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		026C85B8297990F800930CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026C9AE729D29493000DF867 /* SourceSansPro-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		026C9AE829D29493000DF867 /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
+		026C9AE929D29493000DF867 /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
 		02D61F4229BD4CAE0021CE6E /* BreeSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BreeSerif-Regular.ttf"; sourceTree = "<group>"; };
 		02D61F4329BD4CAE0021CE6E /* SignikaNegative-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignikaNegative-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		02D61F4429BD4CAE0021CE6E /* Acme-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acme-Regular.ttf"; sourceTree = "<group>"; };
@@ -83,6 +86,9 @@
 		02D61F4129BD4CAE0021CE6E /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				026C9AE929D29493000DF867 /* SourceSansPro-Bold.ttf */,
+				026C9AE829D29493000DF867 /* SourceSansPro-SemiBold.ttf */,
+				026C9AE729D29493000DF867 /* SourceSansPro-SemiBoldItalic.ttf */,
 				02D61F4229BD4CAE0021CE6E /* BreeSerif-Regular.ttf */,
 				02D61F4329BD4CAE0021CE6E /* SignikaNegative-VariableFont_wght.ttf */,
 				02D61F4429BD4CAE0021CE6E /* Acme-Regular.ttf */,
