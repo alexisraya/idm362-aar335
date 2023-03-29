@@ -55,13 +55,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder Set for 8:30am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebW-dH-8ug">
-                                <rect key="frame" x="16" y="207" width="185" height="22.333333333333343"/>
+                                <rect key="frame" x="16" y="207" width="185" height="23"/>
                                 <fontDescription key="fontDescription" name="SourceSansPro-SemiBoldItalic" family="Source Sans Pro" pointSize="18"/>
                                 <color key="textColor" name="Dark Purple"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Os-h6-NqL">
-                                <rect key="frame" x="16" y="651" width="361" height="44"/>
+                                <rect key="frame" x="16" y="650.66666666666663" width="361" height="44.333333333333371"/>
                                 <color key="tintColor" name="Grey"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add a Vitamin" cornerStyle="large" titleAlignment="center">
@@ -74,7 +74,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FlX-no-19K">
-                                <rect key="frame" x="16" y="249.33333333333337" width="361" height="300"/>
+                                <rect key="frame" x="16" y="250" width="361" height="300"/>
                                 <color key="tintColor" name="Rust"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="RJm-Az-p73"/>
@@ -222,19 +222,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpf-lY-XFt">
-                                <rect key="frame" x="16" y="737" width="361" height="44"/>
-                                <color key="tintColor" name="Green"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Save Vitamin" cornerStyle="large">
-                                    <fontDescription key="titleFontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="24"/>
-                                    <color key="baseForegroundColor" name="White"/>
-                                    <color key="baseBackgroundColor" name="Light Purple"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="saveVitamin" destination="eoC-Hq-Gt1" eventType="touchUpInside" id="aVe-SB-piH"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Vitamin Pattern" translatesAutoresizingMaskIntoConstraints="NO" id="RT2-nR-W0R">
+                                <rect key="frame" x="-96.666666666666686" y="255.66666666666663" width="586.33333333333337" height="451"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="492" id="Nn3-Jz-2aQ"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Vitamin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddx-PS-wU8">
                                 <rect key="frame" x="40" y="99" width="203" height="44"/>
                                 <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="35"/>
@@ -247,18 +240,32 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpf-lY-XFt">
+                                <rect key="frame" x="115.66666666666669" y="736.66666666666663" width="162" height="44.333333333333371"/>
+                                <color key="tintColor" name="Green"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save Vitamin" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="24"/>
+                                    <color key="baseForegroundColor" name="White"/>
+                                    <color key="baseBackgroundColor" name="Light Purple"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveVitamin" destination="eoC-Hq-Gt1" eventType="touchUpInside" id="aVe-SB-piH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bea-c3-jW1"/>
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
                             <constraint firstItem="ddx-PS-wU8" firstAttribute="leading" secondItem="Jj9-sf-tUE" secondAttribute="leading" id="5Ci-7V-u4V"/>
-                            <constraint firstItem="Bea-c3-jW1" firstAttribute="trailing" secondItem="ddx-PS-wU8" secondAttribute="trailing" constant="150" id="7Nr-yL-bYJ"/>
-                            <constraint firstItem="bpf-lY-XFt" firstAttribute="leading" secondItem="Ji4-3w-3jZ" secondAttribute="leadingMargin" id="A64-3E-oyP"/>
+                            <constraint firstItem="Bea-c3-jW1" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="ddx-PS-wU8" secondAttribute="trailing" constant="150" id="7Nr-yL-bYJ"/>
                             <constraint firstItem="Jj9-sf-tUE" firstAttribute="top" secondItem="ddx-PS-wU8" secondAttribute="bottom" constant="40" id="BcK-Al-X5g"/>
+                            <constraint firstItem="RT2-nR-W0R" firstAttribute="centerX" secondItem="Bea-c3-jW1" secondAttribute="centerX" id="FuO-RB-kvF"/>
                             <constraint firstItem="Jj9-sf-tUE" firstAttribute="leading" secondItem="Bea-c3-jW1" secondAttribute="leading" constant="40" id="IGX-E8-7qI"/>
-                            <constraint firstItem="bpf-lY-XFt" firstAttribute="trailing" secondItem="Ji4-3w-3jZ" secondAttribute="trailingMargin" id="KXS-Q4-odg"/>
+                            <constraint firstItem="bpf-lY-XFt" firstAttribute="top" secondItem="RT2-nR-W0R" secondAttribute="bottom" constant="30" id="Ljj-Yw-uhy"/>
                             <constraint firstItem="Jj9-sf-tUE" firstAttribute="trailing" secondItem="Ji4-3w-3jZ" secondAttribute="trailingMargin" constant="-40" id="PEs-6G-T0k"/>
                             <constraint firstItem="ddx-PS-wU8" firstAttribute="top" secondItem="Bea-c3-jW1" secondAttribute="top" constant="40" id="TPE-uP-c4p"/>
+                            <constraint firstItem="bpf-lY-XFt" firstAttribute="centerX" secondItem="Bea-c3-jW1" secondAttribute="centerX" id="XlD-ID-Haa"/>
                             <constraint firstItem="Bea-c3-jW1" firstAttribute="bottom" secondItem="bpf-lY-XFt" secondAttribute="bottom" constant="37" id="hEc-Le-AqO"/>
                         </constraints>
                     </view>
@@ -271,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iwD-RW-jJU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="606.87022900763361" y="780.98591549295782"/>
+            <point key="canvasLocation" x="605.3435114503817" y="780.28169014084506"/>
         </scene>
         <!--Vitamins View Controller-->
         <scene sceneID="Ux7-58-Y1C">
@@ -291,13 +298,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500 mg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpp-vl-yXz">
-                                <rect key="frame" x="43.333333333333343" y="142" width="54.666666666666657" height="22.333333333333343"/>
+                                <rect key="frame" x="43.333333333333343" y="142" width="54.666666666666657" height="23"/>
                                 <fontDescription key="fontDescription" name="SourceSansPro-SemiBoldItalic" family="Source Sans Pro" pointSize="18"/>
                                 <color key="textColor" name="Dark Purple"/>
                                 <color key="highlightedColor" name="Light Purple"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21v-xJ-BCM">
-                                <rect key="frame" x="16" y="737" width="361" height="44"/>
+                                <rect key="frame" x="91.666666666666671" y="736.66666666666663" width="209.66666666666663" height="44.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="I took my Vitamin" cornerStyle="large">
                                     <fontDescription key="titleFontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="24"/>
@@ -305,20 +312,27 @@
                                     <color key="baseBackgroundColor" name="Light Purple"/>
                                 </buttonConfiguration>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Vitamin Pattern" translatesAutoresizingMaskIntoConstraints="NO" id="elc-zD-HmV">
+                                <rect key="frame" x="-96.666666666666686" y="255.66666666666663" width="586.33333333333337" height="451"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="492" id="XCf-fR-stk"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SLF-Gj-8yA"/>
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
+                            <constraint firstItem="elc-zD-HmV" firstAttribute="centerX" secondItem="SLF-Gj-8yA" secondAttribute="centerX" id="3LZ-4l-LFH"/>
                             <constraint firstItem="SLF-Gj-8yA" firstAttribute="trailing" secondItem="Zpp-vl-yXz" secondAttribute="trailing" constant="295" id="3fy-Zs-fbp"/>
                             <constraint firstItem="SLF-Gj-8yA" firstAttribute="bottom" secondItem="IGX-Yt-fh9" secondAttribute="bottom" constant="684" id="8BI-in-A7F"/>
                             <constraint firstItem="Zpp-vl-yXz" firstAttribute="top" secondItem="IGX-Yt-fh9" secondAttribute="bottom" constant="8" symbolic="YES" id="FqA-tZ-9UM"/>
                             <constraint firstItem="SLF-Gj-8yA" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="IGX-Yt-fh9" secondAttribute="trailing" constant="217" id="Guo-EE-ilI"/>
-                            <constraint firstItem="21v-xJ-BCM" firstAttribute="trailing" secondItem="j3j-tQ-m1p" secondAttribute="trailingMargin" id="IHs-fB-h5a"/>
                             <constraint firstItem="Zpp-vl-yXz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IGX-Yt-fh9" secondAttribute="leading" id="Omt-vS-VOC"/>
                             <constraint firstItem="IGX-Yt-fh9" firstAttribute="leading" secondItem="SLF-Gj-8yA" secondAttribute="leading" constant="41" id="YDH-zU-hAb"/>
                             <constraint firstItem="IGX-Yt-fh9" firstAttribute="top" secondItem="SLF-Gj-8yA" secondAttribute="top" constant="40" id="YLg-gY-SXG"/>
-                            <constraint firstItem="21v-xJ-BCM" firstAttribute="leading" secondItem="j3j-tQ-m1p" secondAttribute="leadingMargin" id="gdg-Be-faR"/>
+                            <constraint firstItem="21v-xJ-BCM" firstAttribute="centerX" secondItem="SLF-Gj-8yA" secondAttribute="centerX" id="jCR-LV-n1c"/>
                             <constraint firstItem="SLF-Gj-8yA" firstAttribute="bottom" secondItem="21v-xJ-BCM" secondAttribute="bottom" constant="37" id="yhF-qm-8Sq"/>
+                            <constraint firstItem="21v-xJ-BCM" firstAttribute="top" secondItem="elc-zD-HmV" secondAttribute="bottom" constant="29.999999999999886" id="zJl-Mw-LaI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -331,29 +345,30 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Vitamin Pattern" width="586" height="451"/>
         <image name="gear" catalog="system" width="128" height="122"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
-            <color red="0.0" green="0.30588235294117649" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.3059999942779541" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Background Color">
-            <color red="0.94901960784313721" green="0.98039215686274506" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94900000095367432" green="0.98000001907348633" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Copy Black">
             <color red="0.054999999701976776" green="0.030999999493360519" blue="0.024000000208616257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Dark Purple">
-            <color red="0.22745098039215686" green="0.12941176470588234" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.22699999809265137" green="0.1289999932050705" blue="0.50199997425079346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Green">
             <color red="0.17599999904632568" green="0.37999999523162842" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Grey">
-            <color red="0.63921568627450975" green="0.63529411764705879" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63899999856948853" green="0.63499999046325684" blue="0.65499997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Light Purple">
-            <color red="0.55294117647058827" green="0.45098039215686275" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.55299997329711914" green="0.45100000500679016" blue="0.84299999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Peach">
             <color red="0.94900000095367432" green="0.84299999475479126" blue="0.81999999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
