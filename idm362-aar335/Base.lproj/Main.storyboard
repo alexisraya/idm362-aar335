@@ -55,7 +55,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder Set for 8:30am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebW-dH-8ug">
-                                <rect key="frame" x="16" y="207" width="185" height="23"/>
+                                <rect key="frame" x="16" y="207" width="185" height="22.666666666666657"/>
                                 <fontDescription key="fontDescription" name="SourceSansPro-SemiBoldItalic" family="Source Sans Pro" pointSize="18"/>
                                 <color key="textColor" name="Dark Purple"/>
                                 <nil key="highlightedColor"/>
@@ -74,7 +74,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FlX-no-19K">
-                                <rect key="frame" x="16" y="250" width="361" height="300"/>
+                                <rect key="frame" x="16" y="249.66666666666663" width="361" height="300"/>
                                 <color key="tintColor" name="Rust"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="RJm-Az-p73"/>
@@ -84,10 +84,10 @@
                                 <color key="sectionIndexBackgroundColor" name="Grey"/>
                                 <color key="sectionIndexTrackingBackgroundColor" name="Background Color"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="x1S-BS-Gu3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="x1S-BS-Gu3">
                                         <rect key="frame" x="20" y="55.333332061767578" width="321" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x1S-BS-Gu3" id="aME-xw-21T">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="right" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x1S-BS-Gu3" id="aME-xw-21T">
                                             <rect key="frame" x="0.0" y="0.0" width="321" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" name="White"/>
@@ -298,7 +298,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500 mg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpp-vl-yXz">
-                                <rect key="frame" x="43.333333333333343" y="142" width="54.666666666666657" height="23"/>
+                                <rect key="frame" x="41" y="142" width="57" height="23"/>
                                 <fontDescription key="fontDescription" name="SourceSansPro-SemiBoldItalic" family="Source Sans Pro" pointSize="18"/>
                                 <color key="textColor" name="Dark Purple"/>
                                 <color key="highlightedColor" name="Light Purple"/>
@@ -323,11 +323,11 @@
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
                             <constraint firstItem="elc-zD-HmV" firstAttribute="centerX" secondItem="SLF-Gj-8yA" secondAttribute="centerX" id="3LZ-4l-LFH"/>
-                            <constraint firstItem="SLF-Gj-8yA" firstAttribute="trailing" secondItem="Zpp-vl-yXz" secondAttribute="trailing" constant="295" id="3fy-Zs-fbp"/>
+                            <constraint firstItem="SLF-Gj-8yA" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Zpp-vl-yXz" secondAttribute="trailing" constant="295" id="3fy-Zs-fbp"/>
                             <constraint firstItem="SLF-Gj-8yA" firstAttribute="bottom" secondItem="IGX-Yt-fh9" secondAttribute="bottom" constant="684" id="8BI-in-A7F"/>
                             <constraint firstItem="Zpp-vl-yXz" firstAttribute="top" secondItem="IGX-Yt-fh9" secondAttribute="bottom" constant="8" symbolic="YES" id="FqA-tZ-9UM"/>
                             <constraint firstItem="SLF-Gj-8yA" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="IGX-Yt-fh9" secondAttribute="trailing" constant="217" id="Guo-EE-ilI"/>
-                            <constraint firstItem="Zpp-vl-yXz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IGX-Yt-fh9" secondAttribute="leading" id="Omt-vS-VOC"/>
+                            <constraint firstItem="Zpp-vl-yXz" firstAttribute="leading" secondItem="IGX-Yt-fh9" secondAttribute="leading" id="Omt-vS-VOC"/>
                             <constraint firstItem="IGX-Yt-fh9" firstAttribute="leading" secondItem="SLF-Gj-8yA" secondAttribute="leading" constant="41" id="YDH-zU-hAb"/>
                             <constraint firstItem="IGX-Yt-fh9" firstAttribute="top" secondItem="SLF-Gj-8yA" secondAttribute="top" constant="40" id="YLg-gY-SXG"/>
                             <constraint firstItem="21v-xJ-BCM" firstAttribute="centerX" secondItem="SLF-Gj-8yA" secondAttribute="centerX" id="jCR-LV-n1c"/>

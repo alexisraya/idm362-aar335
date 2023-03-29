@@ -13,6 +13,7 @@
 		026C85B2297990F700930CA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026C85B0297990F700930CA3 /* Main.storyboard */; };
 		026C85B4297990F800930CA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026C85B3297990F800930CA3 /* Assets.xcassets */; };
 		026C85B7297990F800930CA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026C85B5297990F800930CA3 /* LaunchScreen.storyboard */; };
+		02AED75C29D5066E00DC6542 /* VitaHeartModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02AED75A29D5066E00DC6542 /* VitaHeartModel.xcdatamodeld */; };
 		02D61F4529BD4CAE0021CE6E /* BreeSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02D61F4229BD4CAE0021CE6E /* BreeSerif-Regular.ttf */; };
 		02D61F4629BD4CAE0021CE6E /* SignikaNegative-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02D61F4329BD4CAE0021CE6E /* SignikaNegative-VariableFont_wght.ttf */; };
 		02D61F4729BD4CAE0021CE6E /* Acme-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02D61F4429BD4CAE0021CE6E /* Acme-Regular.ttf */; };
@@ -32,6 +33,7 @@
 		026C9AE729D29493000DF867 /* SourceSansPro-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		026C9AE829D29493000DF867 /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
 		026C9AE929D29493000DF867 /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
+		02AED75B29D5066E00DC6542 /* VitaHeartModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VitaHeartModel.xcdatamodel; sourceTree = "<group>"; };
 		02D61F4229BD4CAE0021CE6E /* BreeSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BreeSerif-Regular.ttf"; sourceTree = "<group>"; };
 		02D61F4329BD4CAE0021CE6E /* SignikaNegative-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignikaNegative-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		02D61F4429BD4CAE0021CE6E /* Acme-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acme-Regular.ttf"; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				02D61F4129BD4CAE0021CE6E /* fonts */,
 				02D61F4829BEBFD00021CE6E /* EntryViewController.swift */,
 				02D61F4A29BEC1030021CE6E /* VitaminsViewController.swift */,
+				02AED75A29D5066E00DC6542 /* VitaHeartModel.xcdatamodeld */,
 			);
 			path = "idm362-aar335";
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				026C85AF297990F700930CA3 /* ViewController.swift in Sources */,
 				02D61F4929BEBFD00021CE6E /* EntryViewController.swift in Sources */,
+				02AED75C29D5066E00DC6542 /* VitaHeartModel.xcdatamodeld in Sources */,
 				026C85AB297990F700930CA3 /* AppDelegate.swift in Sources */,
 				02D61F4B29BEC1030021CE6E /* VitaminsViewController.swift in Sources */,
 				026C85AD297990F700930CA3 /* SceneDelegate.swift in Sources */,
@@ -390,6 +394,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		02AED75A29D5066E00DC6542 /* VitaHeartModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				02AED75B29D5066E00DC6542 /* VitaHeartModel.xcdatamodel */,
+			);
+			currentVersion = 02AED75B29D5066E00DC6542 /* VitaHeartModel.xcdatamodel */;
+			path = VitaHeartModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 026C859F297990F600930CA3 /* Project object */;
 }
