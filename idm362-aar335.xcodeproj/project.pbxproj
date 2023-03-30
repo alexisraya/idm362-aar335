@@ -56,14 +56,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0269E9E429D53F9900773BBE /* sounds */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = sounds;
-			path = "idm362-aar335/sounds";
-			sourceTree = SOURCE_ROOT;
-		};
 		026C859E297990F600930CA3 = {
 			isa = PBXGroup;
 			children = (
@@ -84,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				0269E9E529D53FC100773BBE /* achievement.mp3 */,
-				0269E9E429D53F9900773BBE /* sounds */,
 				026C85AA297990F700930CA3 /* AppDelegate.swift */,
 				026C85AC297990F700930CA3 /* SceneDelegate.swift */,
 				026C85AE297990F700930CA3 /* ViewController.swift */,

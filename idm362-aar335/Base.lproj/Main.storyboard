@@ -9,14 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SourceSansPro-Bold.ttf">
-            <string>SourceSansPro-Bold</string>
-        </array>
-        <array key="SourceSansPro-SemiBold.ttf">
-            <string>SourceSansPro-SemiBold</string>
-        </array>
-        <array key="SourceSansPro-SemiBoldItalic.ttf">
-            <string>SourceSansPro-SemiBoldItalic</string>
+        <array key="SignikaNegative-VariableFont_wght.ttf">
+            <string>SignikaNegative-Bold</string>
+            <string>SignikaNegative-Medium</string>
+            <string>SignikaNegative-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -49,23 +45,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Don't Forget to Take Your Vitamins" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9A-GC-VFE">
-                                <rect key="frame" x="16" y="99" width="361" height="88"/>
-                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="35"/>
+                                <rect key="frame" x="16" y="99" width="361" height="86.333333333333314"/>
+                                <fontDescription key="fontDescription" name="SignikaNegative-Bold" family="Signika Negative" pointSize="35"/>
                                 <color key="textColor" name="Copy Black"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder Set for 8:30am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebW-dH-8ug">
-                                <rect key="frame" x="16" y="207" width="185" height="22.666666666666657"/>
-                                <fontDescription key="fontDescription" name="SourceSansPro-SemiBoldItalic" family="Source Sans Pro" pointSize="18"/>
+                                <rect key="frame" x="16" y="205.33333333333334" width="190" height="22.333333333333343"/>
+                                <fontDescription key="fontDescription" name="SignikaNegative-Regular" family="Signika Negative" pointSize="18"/>
                                 <color key="textColor" name="Dark Purple"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Os-h6-NqL">
-                                <rect key="frame" x="16" y="650.66666666666663" width="361" height="44.333333333333371"/>
+                                <rect key="frame" x="16" y="651.33333333333337" width="361" height="43.666666666666629"/>
                                 <color key="tintColor" name="Grey"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add a Vitamin" cornerStyle="large" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="24"/>
+                                    <fontDescription key="titleFontDescription" name="SignikaNegative-Bold" family="Signika Negative" pointSize="24"/>
                                     <color key="baseForegroundColor" name="White"/>
                                     <color key="baseBackgroundColor" name="Light Purple"/>
                                 </buttonConfiguration>
@@ -74,7 +70,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FlX-no-19K">
-                                <rect key="frame" x="16" y="249.66666666666663" width="361" height="300"/>
+                                <rect key="frame" x="16" y="247.66666666666663" width="361" height="300"/>
                                 <color key="tintColor" name="Rust"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="RJm-Az-p73"/>
@@ -110,7 +106,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="b5e-zB-vVZ"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="SignikaNegative-Medium" family="Signika Negative" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -174,20 +170,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwf-EW-gpa">
-                                <rect key="frame" x="41" y="99" width="162" height="44"/>
-                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="35"/>
+                                <rect key="frame" x="41" y="99" width="162" height="43.333333333333343"/>
+                                <fontDescription key="fontDescription" name="SignikaNegative-Bold" family="Signika Negative" pointSize="35"/>
                                 <color key="textColor" name="Copy Black"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6f8-vz-f0B">
-                                <rect key="frame" x="41" y="171" width="300" height="173"/>
+                                <rect key="frame" x="41" y="170.33333333333337" width="300" height="173"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3DS-uD-KYR">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxw-Pe-UtW">
                                                 <rect key="frame" x="0.0" y="0.0" width="251" height="31"/>
-                                                <fontDescription key="fontDescription" name="SourceSansPro-SemiBold" family="Source Sans Pro" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SignikaNegative-Medium" family="Signika Negative" pointSize="18"/>
                                                 <color key="textColor" name="Copy Black"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -202,13 +198,13 @@
                                         <rect key="frame" x="0.0" y="46" width="300" height="127"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzg-tE-ly1">
-                                                <rect key="frame" x="0.0" y="0.0" width="118.33333333333333" height="127"/>
-                                                <fontDescription key="fontDescription" name="SourceSansPro-SemiBold" family="Source Sans Pro" pointSize="18"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="115.33333333333333" height="127"/>
+                                                <fontDescription key="fontDescription" name="SignikaNegative-Medium" family="Signika Negative" pointSize="18"/>
                                                 <color key="textColor" name="Copy Black"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlV-9u-gOn">
-                                                <rect key="frame" x="118.33333333333336" y="0.0" width="181.66666666666663" height="127"/>
+                                                <rect key="frame" x="115.33333333333336" y="0.0" width="184.66666666666663" height="127"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="696951000.311849">
                                                     <!--2023-02-01 13:30:00 +0000-->
                                                 </date>
@@ -218,12 +214,12 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uG4-6x-VW6">
-                                <rect key="frame" x="16" y="699.66666666666663" width="361" height="44.333333333333371"/>
+                                <rect key="frame" x="16" y="700.33333333333337" width="361" height="43.666666666666629"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Save Changes" cornerStyle="large">
-                                    <fontDescription key="titleFontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="24"/>
+                                    <fontDescription key="titleFontDescription" name="SignikaNegative-Bold" family="Signika Negative" pointSize="24"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" name="Light Purple"/>
                                 </buttonConfiguration>
@@ -267,7 +263,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Vitamin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddx-PS-wU8">
                                 <rect key="frame" x="40" y="99" width="203" height="44"/>
-                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="SignikaNegative-Bold" family="Signika Negative" pointSize="35"/>
                                 <color key="textColor" name="Copy Black"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -278,11 +274,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpf-lY-XFt">
-                                <rect key="frame" x="115.66666666666669" y="736.66666666666663" width="162" height="44.333333333333371"/>
+                                <rect key="frame" x="116.66666666666669" y="736.66666666666663" width="160" height="44.333333333333371"/>
                                 <color key="tintColor" name="Green"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Save Vitamin" cornerStyle="large">
-                                    <fontDescription key="titleFontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="24"/>
+                                    <fontDescription key="titleFontDescription" name="SignikaNegative-Bold" family="Signika Negative" pointSize="24"/>
                                     <color key="baseForegroundColor" name="White"/>
                                     <color key="baseBackgroundColor" name="Light Purple"/>
                                 </buttonConfiguration>
@@ -331,13 +327,13 @@
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="6Eb-38-BuQ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="SignikaNegative-Bold" family="Signika Negative" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500 mg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpp-vl-yXz">
-                                <rect key="frame" x="41" y="142" width="57" height="23"/>
-                                <fontDescription key="fontDescription" name="SourceSansPro-SemiBoldItalic" family="Source Sans Pro" pointSize="18"/>
+                                <rect key="frame" x="41" y="142" width="57.333333333333343" height="23"/>
+                                <fontDescription key="fontDescription" name="SignikaNegative-Medium" family="Signika Negative" pointSize="18"/>
                                 <color key="textColor" name="Dark Purple"/>
                                 <color key="highlightedColor" name="Light Purple"/>
                             </label>
