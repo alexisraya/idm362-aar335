@@ -71,13 +71,14 @@
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FlX-no-19K">
                                 <rect key="frame" x="16" y="247.66666666666663" width="361" height="300"/>
-                                <color key="tintColor" name="Rust"/>
+                                <color key="backgroundColor" name="Background Color"/>
+                                <color key="tintColor" name="Purple"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="RJm-Az-p73"/>
                                 </constraints>
-                                <color key="separatorColor" name="Rust"/>
+                                <color key="separatorColor" name="Purple"/>
                                 <color key="sectionIndexColor" name="Copy Black"/>
-                                <color key="sectionIndexBackgroundColor" name="Grey"/>
+                                <color key="sectionIndexBackgroundColor" name="Background Color"/>
                                 <color key="sectionIndexTrackingBackgroundColor" name="Background Color"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="x1S-BS-Gu3" customClass="CustomTableViewCell" customModule="idm362_aar335" customModuleProvider="target">
@@ -111,6 +112,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <color key="backgroundColor" name="Background Color"/>
                                                 </stackView>
                                             </subviews>
                                             <color key="backgroundColor" name="White"/>
@@ -121,14 +123,17 @@
                                                 <constraint firstItem="gIp-Ip-dJ6" firstAttribute="leading" secondItem="aME-xw-21T" secondAttribute="leading" constant="20" id="zUL-cN-Dka"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="White"/>
-                                        <color key="tintColor" name="Copy Black"/>
+                                        <color key="backgroundColor" name="Background Color"/>
+                                        <color key="tintColor" name="Background Color"/>
                                         <connections>
                                             <outlet property="checkSwitch" destination="hQB-3W-v9k" id="3Vc-sK-LdF"/>
                                             <outlet property="vitaminName" destination="Whf-33-C0w" id="dU6-jz-PHM"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <color key="separatorColor" name="Purple"/>
+                                </variation>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -331,8 +336,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500 mg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpp-vl-yXz">
-                                <rect key="frame" x="41" y="142" width="57.333333333333343" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make sure you took this today!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpp-vl-yXz">
+                                <rect key="frame" x="41" y="142" width="233" height="23"/>
                                 <fontDescription key="fontDescription" name="SignikaNegative-Medium" family="Signika Negative" pointSize="18"/>
                                 <color key="textColor" name="Dark Purple"/>
                                 <color key="highlightedColor" name="Light Purple"/>
@@ -401,8 +406,8 @@
         <namedColor name="Peach">
             <color red="0.94900000095367432" green="0.84299999475479126" blue="0.81999999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Rust">
-            <color red="0.83899998664855957" green="0.34099999070167542" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Purple">
+            <color red="0.59200000762939453" green="0.27799999713897705" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="White">
             <color red="0.94499999284744263" green="0.9570000171661377" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
