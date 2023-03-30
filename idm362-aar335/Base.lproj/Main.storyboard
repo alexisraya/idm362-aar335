@@ -94,12 +94,16 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="gIp-Ip-dJ6">
                                                     <rect key="frame" x="20" y="9.9999999999999982" width="281" height="31.333333333333329"/>
                                                     <subviews>
-                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQB-3W-v9k">
+                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hQB-3W-v9k">
                                                             <rect key="frame" x="0.0" y="0.0" width="51" height="31.333333333333332"/>
                                                             <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.90000000000000002"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="49" id="7Gy-pa-Ftv"/>
                                                             </constraints>
+                                                            <color key="onTintColor" name="Light Blue"/>
+                                                            <connections>
+                                                                <action selector="switchFunc:" destination="x1S-BS-Gu3" eventType="valueChanged" id="iyA-yC-wh8"/>
+                                                            </connections>
                                                         </switch>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitamin Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whf-33-C0w">
                                                             <rect key="frame" x="131" y="0.0" width="150" height="31.333333333333332"/>
@@ -256,9 +260,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Vitamin Pattern" translatesAutoresizingMaskIntoConstraints="NO" id="RT2-nR-W0R">
-                                <rect key="frame" x="-96.666666666666686" y="255.66666666666663" width="586.33333333333337" height="451"/>
+                                <rect key="frame" x="-210" y="256" width="796" height="451"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="492" id="Nn3-Jz-2aQ"/>
+                                    <constraint firstAttribute="width" constant="796" id="rTi-Q7-T6y"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Vitamin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddx-PS-wU8">
@@ -290,12 +294,13 @@
                         <viewLayoutGuide key="safeArea" id="Bea-c3-jW1"/>
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
+                            <constraint firstItem="RT2-nR-W0R" firstAttribute="centerX" secondItem="Bea-c3-jW1" secondAttribute="centerX" constant="-8.5" id="4uV-dw-XDk"/>
                             <constraint firstItem="ddx-PS-wU8" firstAttribute="leading" secondItem="Jj9-sf-tUE" secondAttribute="leading" id="5Ci-7V-u4V"/>
                             <constraint firstItem="Bea-c3-jW1" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="ddx-PS-wU8" secondAttribute="trailing" constant="150" id="7Nr-yL-bYJ"/>
+                            <constraint firstItem="bpf-lY-XFt" firstAttribute="top" secondItem="RT2-nR-W0R" secondAttribute="bottom" constant="29.666666666666515" id="8Rh-au-ld4"/>
                             <constraint firstItem="Jj9-sf-tUE" firstAttribute="top" secondItem="ddx-PS-wU8" secondAttribute="bottom" constant="40" id="BcK-Al-X5g"/>
-                            <constraint firstItem="RT2-nR-W0R" firstAttribute="centerX" secondItem="Bea-c3-jW1" secondAttribute="centerX" id="FuO-RB-kvF"/>
                             <constraint firstItem="Jj9-sf-tUE" firstAttribute="leading" secondItem="Bea-c3-jW1" secondAttribute="leading" constant="40" id="IGX-E8-7qI"/>
-                            <constraint firstItem="bpf-lY-XFt" firstAttribute="top" secondItem="RT2-nR-W0R" secondAttribute="bottom" constant="30" id="Ljj-Yw-uhy"/>
+                            <constraint firstItem="RT2-nR-W0R" firstAttribute="leading" secondItem="Ji4-3w-3jZ" secondAttribute="leading" constant="-210" id="Ol7-zH-5QE"/>
                             <constraint firstItem="Jj9-sf-tUE" firstAttribute="trailing" secondItem="Ji4-3w-3jZ" secondAttribute="trailingMargin" constant="-40" id="PEs-6G-T0k"/>
                             <constraint firstItem="ddx-PS-wU8" firstAttribute="top" secondItem="Bea-c3-jW1" secondAttribute="top" constant="40" id="TPE-uP-c4p"/>
                             <constraint firstItem="bpf-lY-XFt" firstAttribute="centerX" secondItem="Bea-c3-jW1" secondAttribute="centerX" id="XlD-ID-Haa"/>
@@ -336,36 +341,27 @@
                                 <color key="textColor" name="Dark Purple"/>
                                 <color key="highlightedColor" name="Light Purple"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21v-xJ-BCM">
-                                <rect key="frame" x="91.666666666666671" y="736.66666666666663" width="209.66666666666663" height="44.333333333333371"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="I took my Vitamin" cornerStyle="large">
-                                    <fontDescription key="titleFontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="24"/>
-                                    <color key="baseForegroundColor" name="White"/>
-                                    <color key="baseBackgroundColor" name="Light Purple"/>
-                                </buttonConfiguration>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Vitamin Pattern" translatesAutoresizingMaskIntoConstraints="NO" id="elc-zD-HmV">
-                                <rect key="frame" x="-96.666666666666686" y="255.66666666666663" width="586.33333333333337" height="451"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Vitamin Pattern" translatesAutoresizingMaskIntoConstraints="NO" id="elc-zD-HmV">
+                                <rect key="frame" x="-97" y="173" width="705" height="645"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="492" id="XCf-fR-stk"/>
+                                    <constraint firstAttribute="width" constant="705" id="biZ-mx-YLw"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="645" id="haS-mD-rfR"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SLF-Gj-8yA"/>
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
-                            <constraint firstItem="elc-zD-HmV" firstAttribute="centerX" secondItem="SLF-Gj-8yA" secondAttribute="centerX" id="3LZ-4l-LFH"/>
                             <constraint firstItem="SLF-Gj-8yA" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Zpp-vl-yXz" secondAttribute="trailing" constant="295" id="3fy-Zs-fbp"/>
                             <constraint firstItem="SLF-Gj-8yA" firstAttribute="bottom" secondItem="IGX-Yt-fh9" secondAttribute="bottom" constant="684" id="8BI-in-A7F"/>
+                            <constraint firstItem="elc-zD-HmV" firstAttribute="bottom" secondItem="SLF-Gj-8yA" secondAttribute="bottom" id="CMb-RQ-SVl"/>
                             <constraint firstItem="Zpp-vl-yXz" firstAttribute="top" secondItem="IGX-Yt-fh9" secondAttribute="bottom" constant="8" symbolic="YES" id="FqA-tZ-9UM"/>
                             <constraint firstItem="SLF-Gj-8yA" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="IGX-Yt-fh9" secondAttribute="trailing" constant="217" id="Guo-EE-ilI"/>
+                            <constraint firstItem="elc-zD-HmV" firstAttribute="leading" secondItem="j3j-tQ-m1p" secondAttribute="leading" constant="-97" id="Kex-sa-kAM"/>
                             <constraint firstItem="Zpp-vl-yXz" firstAttribute="leading" secondItem="IGX-Yt-fh9" secondAttribute="leading" id="Omt-vS-VOC"/>
                             <constraint firstItem="IGX-Yt-fh9" firstAttribute="leading" secondItem="SLF-Gj-8yA" secondAttribute="leading" constant="41" id="YDH-zU-hAb"/>
                             <constraint firstItem="IGX-Yt-fh9" firstAttribute="top" secondItem="SLF-Gj-8yA" secondAttribute="top" constant="40" id="YLg-gY-SXG"/>
-                            <constraint firstItem="21v-xJ-BCM" firstAttribute="centerX" secondItem="SLF-Gj-8yA" secondAttribute="centerX" id="jCR-LV-n1c"/>
-                            <constraint firstItem="SLF-Gj-8yA" firstAttribute="bottom" secondItem="21v-xJ-BCM" secondAttribute="bottom" constant="37" id="yhF-qm-8Sq"/>
-                            <constraint firstItem="21v-xJ-BCM" firstAttribute="top" secondItem="elc-zD-HmV" secondAttribute="bottom" constant="29.999999999999886" id="zJl-Mw-LaI"/>
+                            <constraint firstItem="elc-zD-HmV" firstAttribute="top" secondItem="Zpp-vl-yXz" secondAttribute="bottom" constant="8" symbolic="YES" id="fpn-xG-1ho"/>
                         </constraints>
                     </view>
                     <connections>
@@ -399,6 +395,9 @@
         </namedColor>
         <namedColor name="Grey">
             <color red="0.63899999856948853" green="0.63499999046325684" blue="0.65499997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light Blue">
+            <color red="0.41200000047683716" green="0.72500002384185791" blue="0.88200002908706665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Light Purple">
             <color red="0.55299997329711914" green="0.45100000500679016" blue="0.84299999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

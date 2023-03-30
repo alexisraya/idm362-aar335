@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import AVFoundation
+
+var myAudioPlayerObj = AVAudioPlayer()
 
 class ViewController: UIViewController {
     

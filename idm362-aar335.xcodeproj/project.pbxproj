@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0269E9E629D53FC100773BBE /* achievement.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0269E9E529D53FC100773BBE /* achievement.mp3 */; };
 		026C85AB297990F700930CA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C85AA297990F700930CA3 /* AppDelegate.swift */; };
 		026C85AD297990F700930CA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C85AC297990F700930CA3 /* SceneDelegate.swift */; };
 		026C85AF297990F700930CA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C85AE297990F700930CA3 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0269E9E529D53FC100773BBE /* achievement.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = achievement.mp3; sourceTree = "<group>"; };
 		026C85A7297990F700930CA3 /* idm362-aar335.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "idm362-aar335.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		026C85AA297990F700930CA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		026C85AC297990F700930CA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0269E9E429D53F9900773BBE /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = sounds;
+			path = "idm362-aar335/sounds";
+			sourceTree = SOURCE_ROOT;
+		};
 		026C859E297990F600930CA3 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,8 @@
 		026C85A9297990F700930CA3 /* idm362-aar335 */ = {
 			isa = PBXGroup;
 			children = (
+				0269E9E529D53FC100773BBE /* achievement.mp3 */,
+				0269E9E429D53F9900773BBE /* sounds */,
 				026C85AA297990F700930CA3 /* AppDelegate.swift */,
 				026C85AC297990F700930CA3 /* SceneDelegate.swift */,
 				026C85AE297990F700930CA3 /* ViewController.swift */,
@@ -162,6 +174,7 @@
 			files = (
 				026C85B7297990F800930CA3 /* LaunchScreen.storyboard in Resources */,
 				02D61F4729BD4CAE0021CE6E /* Acme-Regular.ttf in Resources */,
+				0269E9E629D53FC100773BBE /* achievement.mp3 in Resources */,
 				026C85B4297990F800930CA3 /* Assets.xcassets in Resources */,
 				026C85B2297990F700930CA3 /* Main.storyboard in Resources */,
 				02D61F4629BD4CAE0021CE6E /* SignikaNegative-VariableFont_wght.ttf in Resources */,
