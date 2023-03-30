@@ -80,10 +80,10 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
         
-        cell.textLabel?.text = vitamins[indexPath.row]
-        
+        //cell.textLabel?.text = vitamins[indexPath.row]
+        cell.vitaminName.text = vitamins[indexPath.row]
         return cell
     }
     

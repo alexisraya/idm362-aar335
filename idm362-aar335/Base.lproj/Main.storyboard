@@ -84,16 +84,49 @@
                                 <color key="sectionIndexBackgroundColor" name="Grey"/>
                                 <color key="sectionIndexTrackingBackgroundColor" name="Background Color"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="x1S-BS-Gu3">
-                                        <rect key="frame" x="20" y="55.333332061767578" width="321" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="x1S-BS-Gu3" customClass="CustomTableViewCell" customModule="idm362_aar335" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="55.333332061767578" width="321" height="51.333332061767578"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="right" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x1S-BS-Gu3" id="aME-xw-21T">
-                                            <rect key="frame" x="0.0" y="0.0" width="321" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="321" height="51.333332061767578"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="gIp-Ip-dJ6">
+                                                    <rect key="frame" x="20" y="9.9999999999999982" width="281" height="31.333333333333329"/>
+                                                    <subviews>
+                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQB-3W-v9k">
+                                                            <rect key="frame" x="0.0" y="0.0" width="51" height="31.333333333333332"/>
+                                                            <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.90000000000000002"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="49" id="7Gy-pa-Ftv"/>
+                                                            </constraints>
+                                                        </switch>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitamin Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whf-33-C0w">
+                                                            <rect key="frame" x="131" y="0.0" width="150" height="31.333333333333332"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="b5e-zB-vVZ"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
                                             <color key="backgroundColor" name="White"/>
+                                            <constraints>
+                                                <constraint firstItem="gIp-Ip-dJ6" firstAttribute="top" secondItem="aME-xw-21T" secondAttribute="top" constant="10" id="Ier-MH-TjH"/>
+                                                <constraint firstAttribute="trailing" secondItem="gIp-Ip-dJ6" secondAttribute="trailing" constant="20" id="W8E-76-NcL"/>
+                                                <constraint firstAttribute="bottom" secondItem="gIp-Ip-dJ6" secondAttribute="bottom" constant="10" id="rsB-UG-eww"/>
+                                                <constraint firstItem="gIp-Ip-dJ6" firstAttribute="leading" secondItem="aME-xw-21T" secondAttribute="leading" constant="20" id="zUL-cN-Dka"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="White"/>
                                         <color key="tintColor" name="Copy Black"/>
+                                        <connections>
+                                            <outlet property="checkSwitch" destination="hQB-3W-v9k" id="3Vc-sK-LdF"/>
+                                            <outlet property="vitaminName" destination="Whf-33-C0w" id="dU6-jz-PHM"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
